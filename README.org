@@ -1,1 +1,15 @@
 * A script for pre-filling commit messages
+** Installation
+   #+begin_src sh
+     # Install to `git config core.hooksPath` or whatever directory makes sense
+     chmod +x ./prepare-commit-msg.sh
+     cp ./prepare-commit-msg.sh .git/hooks/prepare-commit-msg
+
+   #+end_src
+
+** Testing the script locally
+   #+begin_src sh
+     touch foo.txt
+     ./prepare-commit-msg.sh foo.txt
+
+   #+end_src
