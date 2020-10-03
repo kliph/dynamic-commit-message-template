@@ -9,7 +9,7 @@ TRIMMED=$(echo $BRANCH_NAME | sed 's/^\([A-Z]*-[0-9]*\).*$/\1/')
 
 if [ "$BRANCH_NAME" != "" ] && ! [[ $BRANCH_EXCLUDED -eq 1 ]]; then
   cp $1 ${1}.bak
-  cat << EOF > $1
+  cat << EOF > "${1}"
 
 # <type>(<scope>): <description>
 #
