@@ -33,5 +33,7 @@ $(git cherry -v master | sed 's/^/# /')
 # - test: Adding missing tests or correcting existing tests
 
 $TRIMMED
+
+$(cat $1)
 EOF
 fi
